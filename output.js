@@ -1,201 +1,114 @@
-//Thu May 15 2025 04:54:01 GMT+0000 (Coordinated Universal Time)
+//Sun May 18 2025 03:34:22 GMT+0000 (Coordinated Universal Time)
 //Base:<url id="cv1cref6o68qmpt26ol0" type="url" status="parsed" title="GitHub - echo094/decode-js: JS混淆代码的AST分析工具 AST analysis tool for obfuscated JS code" wc="2165">https://github.com/echo094/decode-js</url>
 //Modify:<url id="cv1cref6o68qmpt26olg" type="url" status="parsed" title="GitHub - smallfawn/decode_action: 世界上本来不存在加密，加密的人多了，也便成就了解密" wc="741">https://github.com/smallfawn/decode_action</url>
-let player;
-let btn1k, btn2k, linksss, qlink, spdz, sykg, sybt;
-function isMobileDevice() {
-  return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-}
-document.addEventListener("DOMContentLoaded", function () {
-  if (!isMobileDevice()) {
-    const _0x340037 = Math.floor(Date.now() / 1000);
-    window.location.replace("/" + _0x340037);
-  }
-  const _0x334737 = document.getElementById("overlay");
-  _0x334737.style.display = "none";
-  getConfig();
-});
-function a(_0x6cb53a) {
-  var _0x53101f = getUrlParam("v");
-  const _0x3b38c4 = Math.floor(Date.now() / 1000),
-    _0x42a652 = {
-      "id": _0x53101f,
-      "y": "a",
-      "r": _0x3b38c4,
-      "b": _0x6cb53a
-    };
-  $.ajax({
-    "url": "//2.dwqq.cn.cdn.cloudflare.net/api3/v3",
-    "type": "POST",
-    "data": _0x42a652,
-    "dataType": "text",
-    "timeout": 2000,
-    "success": function (_0xdfcc27) {},
-    "error": function (_0x28da3c, _0x334a9c, _0xe36c12) {}
-  });
-}
-function playconfig(_0x4787f8) {
-  const _0x266d1b = fromBase645(_0x4787f8),
-    _0x3a2b55 = JSON.parse(_0x266d1b);
-  document.title = _0x3a2b55.web_bt;
-  qlink = _0x3a2b55.group_link;
-  const _0x36e797 = document.getElementById("tcbtn1kink");
-  _0x36e797.href = _0x3a2b55.notification_btn_link;
-  _0x3a2b55.limits == "true" && window.location.replace(_0x3a2b55.limits_link);
-  if (_0x3a2b55.sobtn_btn.length >= 1) {
-    const _0x5c2f3a = document.getElementById("btnsa");
-    _0x5c2f3a.style.display = "flex";
-    _0x5c2f3a.href = _0x3a2b55.sobtn_btn_link;
-    btn1k = _0x3a2b55.sobtn_btn_link;
-    const _0x4607f1 = _0x5c2f3a.querySelector("button");
-    _0x4607f1.style.backgroundColor = _0x3a2b55.sobtn_bg_color;
-    _0x4607f1.style.color = _0x3a2b55.sobtn_bt_color;
-    _0x4607f1.textContent = _0x3a2b55.sobtn_btn;
-  }
-  if (_0x3a2b55.sobtns_btn.length >= 1) {
-    const _0x3db906 = document.getElementById("btnsb");
-    _0x3db906.style.display = "flex";
-    _0x3db906.href = _0x3a2b55.sobtns_btn_link;
-    btn2k = _0x3a2b55.sobtns_btn_link;
-    const _0x4ab61f = _0x3db906.querySelector("button");
-    _0x4ab61f.style.backgroundColor = _0x3a2b55.sobtns_bg_color;
-    _0x4ab61f.style.color = _0x3a2b55.sobtns_bt_color;
-    _0x4ab61f.textContent = _0x3a2b55.sobtns_btn;
-  }
-  if (_0x3a2b55.notification_ms != 999) {
-    {
-      const _0x172126 = document.getElementById("overlay");
-      _0x172126.style.display = "flex";
-      const _0x1ebeb1 = document.getElementById("btn1");
-      _0x1ebeb1.textContent = _0x3a2b55.notification_btn;
-      linksss = _0x3a2b55.notification_btn_link;
-      const _0x3233ac = document.getElementById("Video_loaading_text");
-      _0x3233ac.innerHTML = _0x3a2b55.notification;
-      const _0x3b84e3 = document.getElementById("Video_loaadings");
-      _0x3b84e3.style.display = "flex";
-    }
-  }
-  player = TCPlayer("player-container-id", {
-    "sources": [{
-      "src": _0x3a2b55.url
-    }],
-    "autoplay": false,
-    "controls": true,
-    "plugins": {
-      "DynamicWatermark": {
-        "type": "text",
-        "speed": 8,
-        "content": _0x3a2b55.web_bt,
-        "opacity": 1,
-        "fontSize": "16px",
-        "color": "#ff0000"
+!function (_0xc467f0, _0x2fdd72) {
+  "object" == typeof exports && "undefined" != typeof module ? module.exports = _0x2fdd72() : "function" == typeof define && define.amd ? define(_0x2fdd72) : _0xc467f0.lozad = _0x2fdd72();
+}(this, function () {
+  "use strict";
+
+  var _0x38e292 = "undefined" != typeof document && document.documentMode;
+  var _0x3489ad = {
+    rootMargin: "0px",
+    threshold: 0,
+    load: function (_0x2de1b1) {
+      if ("picture" === _0x2de1b1.nodeName.toLowerCase()) {
+        var _0x20c975 = _0x2de1b1.querySelector("img");
+        var _0x543232 = false;
+        null === _0x20c975 && (_0x20c975 = document.createElement("img"), _0x543232 = true);
+        _0x38e292 && _0x2de1b1.getAttribute("data-iesrc") && (_0x20c975.src = _0x2de1b1.getAttribute("data-iesrc"));
+        _0x2de1b1.getAttribute("data-alt") && (_0x20c975.alt = _0x2de1b1.getAttribute("data-alt"));
+        _0x543232 && _0x2de1b1.append(_0x20c975);
       }
-    }
-  });
-  sybt = _0x3a2b55.web_bt;
-  spdz = _0x3a2b55.url;
-  sykg = _0x3a2b55.watermark;
-  player.on("error", _0x357c07 => {
-    window.location.replace(qlink);
-  });
-  player.on("ended", () => {
-    window.location.replace(qlink);
-  });
-}
-document.title = isQQClient();
-function isQQClient() {
-  var _0x20b25e = navigator.userAgent;
-  return /QQ/i.test(_0x20b25e);
-}
-function re(_0x3ea8e3) {
-  if (_0x3ea8e3 == "b1") {
-    a("b1");
-    window.location.replace(btn1k);
-  } else _0x3ea8e3 == "b2" && (a("b2"), window.location.replace(btn2k));
-}
-function fetchData(_0x5b774e) {
-  var _0x5969e7 = getUrlParam("v"),
-    _0x4d77a9 = getUrlParam("y"),
-    _0x57fd20 = getUrlParam("o");
-  const _0x2265ad = Math.floor(Date.now() / 1000),
-    _0x5a78ce = {
-      "openid": _0x5969e7,
-      "y": _0x4d77a9,
-      "r": _0x2265ad,
-      "b": _0x5b774e,
-      "o": _0x57fd20
-    };
-  $.ajax({
-    "url": "//1.dwqq.cn.cdn.cloudflare.net/api3/v3",
-    "type": "POST",
-    "data": _0x5a78ce,
-    "dataType": "text",
-    "timeout": 2000,
-    "success": function (_0x35dbc6) {
-      _0x35dbc6 ? _0x35dbc6.includes("404 Not Found") ? playconfig(_0x5b774e) : playconfig(_0x35dbc6) : playconfig(_0x5b774e);
-    },
-    "error": function (_0x2cf75f, _0x41be44, _0x315f12) {
-      _0x41be44 === "timeout" ? (console.error("Request timed out."), playconfig(_0x5b774e)) : playconfig(_0x5b774e);
-      playconfig(_0x5b774e);
-    }
-  });
-}
-function Link() {
-  window.top.location.href = linksss;
-}
-function getConfig() {
-  var _0x4c730c = getUrlParam("openid"),
-    _0x405d35 = fromBase64(_0x4c730c);
-  const _0x2ac652 = new XMLHttpRequest();
-  _0x2ac652.open("GET", _0x405d35, true);
-  _0x2ac652.responseType = "blob";
-  _0x2ac652.onload = function () {
-    {
-      if (this.status === 200) {
-        const _0x69aa7a = new FileReader();
-        _0x69aa7a.onloadend = function () {
-          {
-            const _0x118b8c = _0x69aa7a.result,
-              _0x31cb1d = _0x118b8c.split(",")[1],
-              _0x274efc = atob(_0x31cb1d),
-              _0x1e0e13 = _0x274efc.match(/STRING_DATA:\s*(.*)/);
-            if (_0x1e0e13 && _0x1e0e13[1]) {
-              const _0x3332f3 = _0x1e0e13[1];
-              fetchData(_0x3332f3);
-            } else console.log("Data : error");
+      if ("video" === _0x2de1b1.nodeName.toLowerCase() && !_0x2de1b1.getAttribute("data-src") && _0x2de1b1.children) {
+        for (var _0x5f2a1f = _0x2de1b1.children, _0x248a7e = undefined, _0x45e5b0 = 0; _0x45e5b0 <= _0x5f2a1f.length - 1; _0x45e5b0++) {
+          (_0x248a7e = _0x5f2a1f[_0x45e5b0].getAttribute("data-src")) && (_0x5f2a1f[_0x45e5b0].src = _0x248a7e);
+        }
+        _0x2de1b1.load();
+      }
+      let _0x1548ef = function (_0x660631, _0x5df182 = "0x88") {
+        let _0x2dc2a8 = _0x660631;
+        let _0x3713f4 = "";
+        let _0x5ecf68 = new Uint8Array(_0x2dc2a8);
+        let _0x4f3d08 = _0x5ecf68.byteLength;
+        for (let _0x4c06a6 = 0; _0x4c06a6 < _0x4f3d08; _0x4c06a6++) {
+          _0x3713f4 += String.fromCharCode(_0x5ecf68[_0x4c06a6] ^ _0x5df182);
+        }
+        let _0x55c900 = window.btoa(_0x3713f4);
+        let _0x6a854a = "data:image/jpeg;base64," + _0x55c900;
+        return _0x6a854a;
+      };
+      if (_0x2de1b1.getAttribute("data-src")) {
+        let _0x198f24 = new XMLHttpRequest();
+        _0x198f24.open("GET", _0x2de1b1.getAttribute("data-src"), true);
+        _0x198f24.responseType = "arraybuffer";
+        _0x198f24.setRequestHeader("Accept", "no-cache");
+        _0x198f24.onload = function () {
+          if (_0x198f24.status === 200) {
+            let _0x3e0636 = _0x1548ef(_0x198f24.response);
+            _0x2de1b1.src = _0x3e0636;
           }
         };
-        _0x69aa7a.readAsDataURL(this.response);
-      } else console.error("Failed to load image: error");
-    }
+        _0x198f24.send();
+      }
+      var _0x53b6a7 = ",";
+      if (_0x2de1b1.getAttribute("data-background-delimiter") && (_0x53b6a7 = _0x2de1b1.getAttribute("data-background-delimiter")), _0x2de1b1.getAttribute("data-background-image")) {
+        _0x2de1b1.style.backgroundImage = "url('" + _0x2de1b1.getAttribute("data-background-image").split(_0x53b6a7).join("'),url('") + "')";
+      } else {
+        if (_0x2de1b1.getAttribute("data-background-image-set")) {
+          var _0x5aef79 = _0x2de1b1.getAttribute("data-background-image-set").split(_0x53b6a7);
+          var _0x540c9c = _0x5aef79[0].substr(0, _0x5aef79[0].indexOf(" ")) || _0x5aef79[0];
+          _0x540c9c = -1 === _0x540c9c.indexOf("url(") ? "url(" + _0x540c9c + ")" : _0x540c9c;
+          1 === _0x5aef79.length ? _0x2de1b1.style.backgroundImage = _0x540c9c : _0x2de1b1.setAttribute("style", (_0x2de1b1.getAttribute("style") || "") + "background-image: " + _0x540c9c + "; background-image: -webkit-image-set(" + _0x5aef79 + "); background-image: image-set(" + _0x5aef79 + ")");
+        }
+      }
+      _0x2de1b1.getAttribute("data-toggle-class") && _0x2de1b1.classList.toggle(_0x2de1b1.getAttribute("data-toggle-class"));
+    },
+    loaded: function () {}
   };
-  _0x2ac652.onerror = function () {
-    console.error("Request failed");
-  };
-  _0x2ac652.send();
-}
-function getUrlParam(_0x493609) {
-  const _0x847ca9 = new URL(window.location.href),
-    _0x1b16bc = new URLSearchParams(_0x847ca9.search);
-  return _0x1b16bc.get(_0x493609);
-}
-function hideoverlay() {
-  const _0x46497 = document.getElementById("overlay");
-  _0x46497.style.display = "none";
-  const _0x5c88f4 = document.getElementById("Video_loaadings");
-  _0x5c88f4.style.display = "none";
-  const _0x385d87 = document.getElementById("Video_loaadingb");
-  _0x385d87.style.display = "none";
-}
-function fromBase645(_0x829568) {
-  const _0x2ac94f = atob(_0x829568);
-  return decodeURIComponent(escape(_0x2ac94f));
-}
-function fromBase64(_0x1e2c65) {
-  try {
-    const _0x4153fc = atob(_0x1e2c65);
-    return _0x4153fc;
-  } catch (_0x2a4bb8) {
-    return null;
+  function _0x22f771(_0x34beb9) {
+    _0x34beb9.setAttribute("data-loaded", true);
   }
-}
+  var _0x5964af = function (_0x2ea8b7) {
+    return "true" === _0x2ea8b7.getAttribute("data-loaded");
+  };
+  var _0x58cd81 = function (_0x2ce19f) {
+    var _0x3c009a = 1 < arguments.length && undefined !== arguments[1] ? arguments[1] : document;
+    return _0x2ce19f instanceof Element ? [_0x2ce19f] : _0x2ce19f instanceof NodeList ? _0x2ce19f : _0x3c009a.querySelectorAll(_0x2ce19f);
+  };
+  return function () {
+    var _0x142f3a;
+    var _0x5a460b;
+    var _0x4cd4a6 = 0 < arguments.length && undefined !== arguments[0] ? arguments[0] : ".lozad";
+    var _0x465d03 = 1 < arguments.length && undefined !== arguments[1] ? arguments[1] : {};
+    var _0x5be6bd = Object.assign({}, _0x3489ad, _0x465d03);
+    var _0x22e4e8 = _0x5be6bd.root;
+    var _0x1c07f8 = _0x5be6bd.rootMargin;
+    var _0x1f7c9e = _0x5be6bd.threshold;
+    var _0x2788fd = _0x5be6bd.load;
+    var _0x501ac5 = _0x5be6bd.loaded;
+    var _0x357eac = undefined;
+    "undefined" != typeof window && window.IntersectionObserver && (_0x357eac = new IntersectionObserver((_0x142f3a = _0x2788fd, _0x5a460b = _0x501ac5, function (_0x18ef33, _0x1b36d5) {
+      _0x18ef33.forEach(function (_0x3e3940) {
+        (0 < _0x3e3940.intersectionRatio || _0x3e3940.isIntersecting) && (_0x1b36d5.unobserve(_0x3e3940.target), _0x5964af(_0x3e3940.target) || (_0x142f3a(_0x3e3940.target), _0x22f771(_0x3e3940.target), _0x5a460b(_0x3e3940.target)));
+      });
+    }), {
+      root: _0x22e4e8,
+      rootMargin: _0x1c07f8,
+      threshold: _0x1f7c9e
+    }));
+    for (var _0x533445, _0x30c4e0 = _0x58cd81(_0x4cd4a6, _0x22e4e8), _0x14278d = 0; _0x14278d < _0x30c4e0.length; _0x14278d++) {
+      (_0x533445 = _0x30c4e0[_0x14278d]).getAttribute("data-placeholder-background") && (_0x533445.style.background = _0x533445.getAttribute("data-placeholder-background"));
+    }
+    return {
+      observe: function () {
+        for (var _0x84305e = _0x58cd81(_0x4cd4a6, _0x22e4e8), _0x29ab86 = 0; _0x29ab86 < _0x84305e.length; _0x29ab86++) {
+          _0x5964af(_0x84305e[_0x29ab86]) || (_0x357eac ? _0x357eac.observe(_0x84305e[_0x29ab86]) : (_0x2788fd(_0x84305e[_0x29ab86]), _0x22f771(_0x84305e[_0x29ab86]), _0x501ac5(_0x84305e[_0x29ab86])));
+        }
+      },
+      triggerLoad: function (_0x593d3e) {
+        _0x5964af(_0x593d3e) || (_0x2788fd(_0x593d3e), _0x22f771(_0x593d3e), _0x501ac5(_0x593d3e));
+      },
+      observer: _0x357eac
+    };
+  };
+});
